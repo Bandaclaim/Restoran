@@ -18,6 +18,10 @@ namespace Kursovaya.Model
 
         public virtual Personal Personal { get; set; }
 
+        public int ZayavkaId { get; set; }
+
+        public virtual Zayavka Zayavka { get; set; }
+
         public string NameBlud { get; set; }
 
         public string PriceBlud { get; set; }

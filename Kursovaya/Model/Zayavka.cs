@@ -29,6 +29,19 @@ namespace Kursovaya.Model
 
         public string TimeHot { get; set; }
 
+        public virtual ICollection<Check> Checks { get; set; }
+
+        public Zayavka()
+        {
+            Checks = new List<Check>();
+        }
+        public string IdZayavka => Id.ToString();
+        public override string ToString()
+        {
+            return IdZayavka;
+        }
+
+
 
     }
 }

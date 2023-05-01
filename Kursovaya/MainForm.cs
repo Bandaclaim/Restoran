@@ -121,6 +121,10 @@ namespace Kursovaya
             checkEdit.comboBox2.DataSource = zakazs;
             checkEdit.comboBox2.ValueMember = "Id";
             checkEdit.comboBox2.DisplayMember = "IdZakaz";
+            List<Zayavka> zayavkas = db1.Zayavkas.ToList();
+            checkEdit.comboBox3.DataSource = zayavkas;
+            checkEdit.comboBox3.ValueMember = "Id";
+            checkEdit.comboBox3.DisplayMember = "IdZayavka";
             DialogResult result = checkEdit.ShowDialog(this);
             if (result == DialogResult.OK)
             {
@@ -131,16 +135,19 @@ namespace Kursovaya
                     check.StoimObsl = int.Parse(checkEdit.textBox2.Text);
                     check.Personal = (Personal)checkEdit.comboBox1.SelectedItem;
                     check.Zakaz = (Zakaz)checkEdit.comboBox2.SelectedItem;
+                    check.Zayavka = (Zayavka)checkEdit.comboBox3.SelectedItem;
                     var object1 = (Zakaz)checkEdit.comboBox2.SelectedItem;
+                    var object2 = (Zayavka)checkEdit.comboBox3.SelectedItem;
                     check.NameBlud = object1.Names;
                     check.PriceBlud = object1.Prices;
                     var List = object1.Prices.Split('|').ToList();
+                    int count = object2.Count;
                     int sum = 0;
                     for(int i = 0; i < List.Count-1; i++)
                     {
                         sum +=int.Parse(List[i].ToString());
                     }
-                    check.ItogVsego = sum + int.Parse(checkEdit.textBox2.Text);
+                    check.ItogVsego = sum * count + int.Parse(checkEdit.textBox2.Text);
                     db1.Checks.Add(check);
                     db1.SaveChanges();
 

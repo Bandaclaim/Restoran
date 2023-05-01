@@ -167,11 +167,11 @@
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(149, 369);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 43);
+            this.button1.Size = new System.Drawing.Size(107, 43);
             this.button1.TabIndex = 1;
             this.button1.Text = "Изменить";
             this.button1.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(289, 369);
             this.button2.Name = "button2";
@@ -192,7 +192,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(683, 482);
+            this.textBox1.Location = new System.Drawing.Point(683, 487);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 20);
             this.textBox1.TabIndex = 3;
@@ -206,9 +206,11 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Location = new System.Drawing.Point(683, 348);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(240, 128);
+            this.groupBox1.Size = new System.Drawing.Size(240, 133);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Критерии";
@@ -218,7 +220,7 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(3, 111);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(96, 17);
+            this.radioButton6.Size = new System.Drawing.Size(120, 19);
             this.radioButton6.TabIndex = 5;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Кол-во гостей";
@@ -229,7 +231,7 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(3, 92);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(93, 17);
+            this.radioButton5.Size = new System.Drawing.Size(117, 19);
             this.radioButton5.TabIndex = 4;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Мероприятие";
@@ -240,7 +242,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(3, 73);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(121, 17);
+            this.radioButton4.Size = new System.Drawing.Size(153, 19);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Дата мероприятия";
@@ -251,7 +253,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(3, 54);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(119, 17);
+            this.radioButton3.Size = new System.Drawing.Size(149, 19);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Дата составления";
@@ -262,7 +264,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(3, 35);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(114, 17);
+            this.radioButton2.Size = new System.Drawing.Size(144, 19);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Телефон клиента";
@@ -273,7 +275,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(3, 16);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(97, 17);
+            this.radioButton1.Size = new System.Drawing.Size(118, 19);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "ФИО Клиента";
@@ -281,32 +283,44 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(559, 363);
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button3.Location = new System.Drawing.Point(531, 363);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 49);
+            this.button3.Size = new System.Drawing.Size(124, 49);
             this.button3.TabIndex = 5;
             this.button3.Text = "Сортировать";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.SortClick);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(559, 421);
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button4.Location = new System.Drawing.Point(531, 421);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 36);
+            this.button4.Size = new System.Drawing.Size(124, 36);
             this.button4.TabIndex = 6;
             this.button4.Text = "Сбросить";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.ResetClick);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(559, 472);
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button5.Location = new System.Drawing.Point(531, 472);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 23);
+            this.button5.Size = new System.Drawing.Size(124, 23);
             this.button5.TabIndex = 7;
             this.button5.Text = "Найти";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.SearchClick);
             // 
             // ZayavkaForm
@@ -314,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(998, 507);
+            this.ClientSize = new System.Drawing.Size(998, 552);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -325,7 +339,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Name = "ZayavkaForm";
-            this.Text = "ZayavkaForm";
+            this.Text = "Заявки";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zayavkaBindingSource)).EndInit();

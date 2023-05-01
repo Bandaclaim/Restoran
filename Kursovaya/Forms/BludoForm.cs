@@ -27,6 +27,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p=> p.Type.Contains("Закуски(общие)")).OrderBy(p =>p.Name).ToList();
             InitializeComponent();
+            this.Text = "Закуски(общие)";
         }
         public void ZakuskiInd()
         {
@@ -35,6 +36,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Закуски(Индивидуальные)")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Закуски(Индивидуальные)";
         }
         public void Salat()
         {
@@ -43,6 +45,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Салаты")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Салаты";
         }
         public void Fish()
         {
@@ -51,6 +54,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Блюда из рыбы")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Блюда из рыбы";
         }
         public void Bird()
         {
@@ -59,6 +63,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Блюда из мяса птицы")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Блюда из мяса птицы";
         }
         public void Garnir()
         {
@@ -67,6 +72,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Гарниры")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Гарниры";
         }
         public void Des()
         {
@@ -75,6 +81,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Десерты")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Десерты";
         }
         public void Bar()
         {
@@ -83,6 +90,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Напиток")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Напитки";
         }
         public void Hotbl ()
         {
@@ -91,6 +99,7 @@ namespace Kursovaya.Forms
             dataGridView1.DataSource = db.Dishes.Local.ToBindingList();
             dataGridView1.DataSource = db.Dishes.Local.Where(p => p.Type.Contains("Горячие блюда")).OrderBy(p => p.Name).ToList();
             InitializeComponent();
+            this.Text = "Горячие блюда";
         }
 
 

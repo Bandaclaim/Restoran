@@ -64,5 +64,33 @@ namespace Kursovaya.Forms
 
                 changer.Process(items);
         }
+
+        private void SortClick(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.ZakazId).ToList();
+            if (radioButton2.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.Personal).ToList();
+            if (radioButton3.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.NameBlud).ToList();
+            if (radioButton4.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.PriceBlud).ToList();
+            if (radioButton5.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.StoimObsl).ToList();
+            if (radioButton6.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.Stol).ToList();
+            if (radioButton7.Checked == true) dataGridView1.DataSource = db.Checks.Local.OrderBy(p => p.Zakaz.Itogo.ToString()).ToList();
+        }
+
+        private void ResetClick(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            dataGridView1.DataSource = db.Checks.Local.ToBindingList();
+        }
+
+        private void SearchClick(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.ZakazId.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton2.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.Personal.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton3.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.NameBlud.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton4.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.PriceBlud.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton5.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.StoimObsl.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton6.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.Stol.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton7.Checked == true) dataGridView1.DataSource = db.Checks.Local.Where(p => p.Zakaz.Itogo.ToString().Contains(textBox1.Text)).ToList();
+        }
     }
 }

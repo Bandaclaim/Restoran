@@ -45,7 +45,7 @@
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(58, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 41);
@@ -57,7 +57,7 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(190, 296);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 41);
@@ -67,14 +67,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 58);
+            this.textBox1.Location = new System.Drawing.Point(162, 57);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(162, 20);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 117);
+            this.textBox2.Location = new System.Drawing.Point(162, 117);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(162, 20);
             this.textBox2.TabIndex = 3;
@@ -92,7 +92,7 @@
             "Гарниры",
             "Десерты",
             "Напиток"});
-            this.comboBox1.Location = new System.Drawing.Point(142, 176);
+            this.comboBox1.Location = new System.Drawing.Point(162, 175);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 4;
@@ -101,10 +101,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(16, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 19);
+            this.label1.Size = new System.Drawing.Size(132, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Название блюда";
             // 
@@ -112,10 +112,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(16, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 19);
+            this.label2.Size = new System.Drawing.Size(87, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Стоимость";
             // 
@@ -123,10 +123,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(16, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 19);
+            this.label3.Size = new System.Drawing.Size(88, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Тип блюда";
             // 
@@ -134,16 +134,16 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(16, 236);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 19);
+            this.label4.Size = new System.Drawing.Size(139, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Весовка блюда(г)";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 235);
+            this.textBox3.Location = new System.Drawing.Point(162, 235);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(162, 20);
             this.textBox3.TabIndex = 9;
@@ -165,7 +165,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "DishesEdit";
-            this.Text = "DishesEdit";
+            this.Text = "Добавление блюд";
             this.ResumeLayout(false);
             this.PerformLayout();
 

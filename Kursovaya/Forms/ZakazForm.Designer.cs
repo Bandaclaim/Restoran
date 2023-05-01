@@ -97,7 +97,7 @@
             // pricesDataGridViewTextBoxColumn
             // 
             this.pricesDataGridViewTextBoxColumn.DataPropertyName = "Prices";
-            this.pricesDataGridViewTextBoxColumn.HeaderText = "Цены (руб.)";
+            this.pricesDataGridViewTextBoxColumn.HeaderText = "Цены блюд (р.)";
             this.pricesDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.pricesDataGridViewTextBoxColumn.Name = "pricesDataGridViewTextBoxColumn";
             this.pricesDataGridViewTextBoxColumn.Width = 125;
@@ -105,7 +105,7 @@
             // itogoDataGridViewTextBoxColumn
             // 
             this.itogoDataGridViewTextBoxColumn.DataPropertyName = "Itogo";
-            this.itogoDataGridViewTextBoxColumn.HeaderText = "Итог (руб.)";
+            this.itogoDataGridViewTextBoxColumn.HeaderText = "Итог (р.)";
             this.itogoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.itogoDataGridViewTextBoxColumn.Name = "itogoDataGridViewTextBoxColumn";
             this.itogoDataGridViewTextBoxColumn.Width = 125;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "ZakazForm";
-            this.Text = "ZakazForm";
+            this.Text = "Заказы";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zakazBindingSource1)).EndInit();

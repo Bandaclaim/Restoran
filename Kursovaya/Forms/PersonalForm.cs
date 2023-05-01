@@ -95,5 +95,27 @@ namespace Kursovaya.Forms
                 MessageBox.Show("Объект удалён");
             }    
         }
+
+        private void SortClick(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true) dataGridView1.DataSource = db.Personals.Local.OrderBy(p => p.FIO).ToList();
+            if (radioButton2.Checked == true) dataGridView1.DataSource = db.Personals.Local.OrderBy(p => p.Doljnost).ToList();
+            if (radioButton3.Checked == true) dataGridView1.DataSource = db.Personals.Local.OrderBy(p => p.DateOfBirth).ToList();
+            if (radioButton4.Checked == true) dataGridView1.DataSource = db.Personals.Local.OrderBy(p => p.Telephone).ToList();
+        }
+
+        private void SearchClick(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true) dataGridView1.DataSource = db.Personals.Local.Where(p => p.FIO.Contains(textBox1.Text)).ToList();
+            if (radioButton2.Checked == true) dataGridView1.DataSource = db.Personals.Local.Where(p => p.Doljnost.Contains(textBox1.Text)).ToList();
+            if (radioButton3.Checked == true) dataGridView1.DataSource = db.Personals.Local.Where(p => p.DateOfBirth.ToString().Contains(textBox1.Text)).ToList();
+            if (radioButton4.Checked == true) dataGridView1.DataSource = db.Personals.Local.Where(p => p.Telephone.Contains(textBox1.Text)).ToList();
+        }
+
+        private void ResetClick(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            dataGridView1.DataSource = db.Personals.Local.ToBindingList();
+        }
     }
 }

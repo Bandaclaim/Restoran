@@ -258,7 +258,7 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "ZayavkaEdit";
-            this.Text = "ZayavkaEdit";
+            this.Text = "Создание заявки";
             this.ResumeLayout(false);
             this.PerformLayout();
 
